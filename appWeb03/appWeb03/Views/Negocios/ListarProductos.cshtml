@@ -1,0 +1,61 @@
+﻿@model IEnumerable<appWeb03.Models.Producto>
+
+@{
+    ViewBag.Title = "ListarProductos";
+}
+
+<h2>ListarProductos</h2>
+<hr />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.idproducto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nomproducto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombrecategoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.preciounidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UnidadesEnExistencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.total)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idproducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nomproducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombrecategoria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.preciounidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnidadesEnExistencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.total)
+            </td>
+        </tr>
+    }
+
+    <tr>
+        <td colspan="5">Total General del Inventario de Productos</td>
+        <td>@Model.Sum(x => x.total) </td>
+    </tr>
+
+</table>

@@ -1,0 +1,60 @@
+﻿@model IEnumerable<appWeb04.Models.Pedido>
+
+@{
+    ViewBag.Title = "ConsultaPedidoAnio";
+}
+
+<br />
+
+<div>
+@using (Html.BeginForm())
+{
+    <em>Ingrese el Año del Pedido</em>
+    @Html.TextBox("y", 0, new { type = "number", min = 1990, max = DateTime.Today.Year })
+    <button>Consulta</button>
+}
+
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.idpedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechapedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombrecia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dirdestinatario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ciudestinatario)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idpedido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechapedido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombrecia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dirdestinatario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ciudestinatario)
+            </td>
+        </tr>
+    }
+
+</table>

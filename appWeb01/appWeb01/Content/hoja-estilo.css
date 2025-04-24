@@ -1,0 +1,58 @@
+﻿header, nav, footer {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.footer-rs {
+    text-align: center;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 5px;
+}
+
+.menu-item {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    font-size: 18px;
+}
+
+    .menu-item:hover {
+        background-color: yellow;
+        color: blue;
+    }
+
+.rs {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.wrapper-item {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+    .wrapper-item img {
+        width: 90%;
+        height: 220px;
+        padding: 5%;
+    }

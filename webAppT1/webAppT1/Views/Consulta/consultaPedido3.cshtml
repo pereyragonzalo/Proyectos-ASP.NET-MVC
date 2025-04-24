@@ -1,0 +1,61 @@
+﻿@model IEnumerable<webAppT1.Models.PedidosCliente>
+
+@{
+    ViewBag.Title = "Consulta de Pedidos por Año y Empleado";
+    var currentYear = DateTime.Now.Year;
+}
+
+<h2>Consulta de Pedidos por Año y Empleado</h2>
+
+@using (Html.BeginForm("consultaPedido3", "Consulta", FormMethod.Get)) // Reemplaza "Home" con el nombre real de tu controlador si es diferente
+{
+    <div>
+        <label>Ingrese ID del Empleado (1 al 9):</label>
+        <input type="number" name="idemp" min="1" max="9" required value="@Request["idemp"]" />
+    </div>
+    <br />
+    <div>
+        <label>Ingrese Año (1990 - @currentYear):</label>
+        <input type="number" name="y" min="1990" max="@currentYear" required value="@Request["y"]" />
+    </div>
+    <div style="margin-top:10px;">
+        <button type="submit">Consultar</button>
+    </div>
+}
+
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().company_name)</th>
+                <th>@Html.DisplayNameFor(model => model.First().order_id)</th>
+                <th>@Html.DisplayNameFor(model => model.First().order_date)</th>
+                <th>@Html.DisplayNameFor(model => model.First().freight)</th>
+                <th>@Html.DisplayNameFor(model => model.First().ship_address)</th>
+                <th>@Html.DisplayNameFor(model => model.First().ship_city)</th>
+                <th>@Html.DisplayNameFor(model => model.First().employee_id)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.company_name</td>
+                    <td>@item.order_id</td>
+                    <td>@item.order_date.ToShortDateString()</td>
+                    <td>@item.freight</td>
+                    <td>@item.ship_address</td>
+                    <td>@item.ship_city</td>
+                    <td>@item.employee_id</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else if (Request.QueryString.Count > 0)
+{
+    <p><strong>No se encontraron resultados para los criterios ingresados.</strong></p>
+}
+
+

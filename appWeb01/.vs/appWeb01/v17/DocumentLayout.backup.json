@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USUARIO\\POO2501\\appWeb01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7834A0B0-477D-4B30-B286-77EC54344607}|appWeb01\\appWeb01.csproj|c:\\users\\usuario\\poo2501\\appweb01\\appweb01\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7834A0B0-477D-4B30-B286-77EC54344607}|appWeb01\\appWeb01.csproj|solutionrelative:appweb01\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7834A0B0-477D-4B30-B286-77EC54344607}|appWeb01\\appWeb01.csproj|c:\\users\\usuario\\poo2501\\appweb01\\appweb01\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7834A0B0-477D-4B30-B286-77EC54344607}|appWeb01\\appWeb01.csproj|solutionrelative:appweb01\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7834A0B0-477D-4B30-B286-77EC54344607}|appWeb01\\appWeb01.csproj|c:\\users\\usuario\\poo2501\\appweb01\\appweb01\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7834A0B0-477D-4B30-B286-77EC54344607}|appWeb01\\appWeb01.csproj|solutionrelative:appweb01\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7834A0B0-477D-4B30-B286-77EC54344607}|appWeb01\\appWeb01.csproj|c:\\users\\usuario\\poo2501\\appweb01\\appweb01\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7834A0B0-477D-4B30-B286-77EC54344607}|appWeb01\\appWeb01.csproj|solutionrelative:appweb01\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\POO2501\\appWeb01\\appWeb01\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "appWeb01\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\POO2501\\appWeb01\\appWeb01\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "appWeb01\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T05:17:18.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\POO2501\\appWeb01\\appWeb01\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "appWeb01\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\POO2501\\appWeb01\\appWeb01\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "appWeb01\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAowD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T05:14:50.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\POO2501\\appWeb01\\appWeb01\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "appWeb01\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\POO2501\\appWeb01\\appWeb01\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "appWeb01\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T05:14:07.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\POO2501\\appWeb01\\appWeb01\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "appWeb01\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\POO2501\\appWeb01\\appWeb01\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "appWeb01\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T05:26:12.192Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

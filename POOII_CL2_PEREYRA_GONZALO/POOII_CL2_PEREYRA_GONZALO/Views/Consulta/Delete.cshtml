@@ -1,0 +1,37 @@
+﻿@model POOII_CL2_PEREYRA_GONZALO.Models.Producto
+
+@{
+    ViewBag.Title = "Eliminar Producto";
+}
+
+<h2>¿Estás seguro que deseas eliminar este producto?</h2>
+
+<div>
+    <h4>Producto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>ID</dt>
+        <dd>@Model.ProductID</dd>
+
+        <dt>Nombre</dt>
+        <dd>@Model.ProductName</dd>
+
+        <dt>Categoría</dt>
+        <dd>@Model.CategoryName</dd>
+
+        <dt>Precio Unitario</dt>
+        <dd>@Model.UnitPrice</dd>
+
+        <dt>Unidades en Stock</dt>
+        <dd>@Model.UnitsInStock</dd>
+    </dl>
+</div>
+
+@using (Html.BeginForm("Delete", "Consulta", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.ProductID)
+
+    <input type="submit" value="Eliminar" class="btn btn-danger" />
+    @Html.ActionLink("Cancelar", "IndexProductos", null, new { @class = "btn btn-secondary" })
+}

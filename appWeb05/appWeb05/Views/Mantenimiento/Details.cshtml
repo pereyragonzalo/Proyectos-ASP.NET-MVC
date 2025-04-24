@@ -1,0 +1,57 @@
+﻿@model appWeb05.Models.Insumos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalle delinsumo</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.idInsumo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idInsumo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nomInsumo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomInsumo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomProveedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomProveedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.preUnitario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.preUnitario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stockUnitario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stockUnitario)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.idInsumo }) |
+    @Html.ActionLink("Inicio", "ListarInsumos")
+</p>

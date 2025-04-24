@@ -1,0 +1,20 @@
+﻿@using appWeb02.Models;
+@model IEnumerable<Cliente>
+@{
+    ViewBag.Title = "Buscar";
+}
+<br />
+<h2>Buscar</h2>
+
+    @using (Html.BeginForm())
+    {
+        <em>Ingrese las Iniciales de los nombres</em>
+        @Html.TextBox("nombre", string.Empty)
+        <button>Consulta</button>
+    }
+
+<hr />
+<div>
+    @Html.Partial("_PartialCliente")
+</div>
+

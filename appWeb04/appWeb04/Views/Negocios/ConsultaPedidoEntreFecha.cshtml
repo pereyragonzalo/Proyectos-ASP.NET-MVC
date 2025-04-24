@@ -1,0 +1,60 @@
+﻿@model IEnumerable<appWeb04.Models.Pedido>
+
+@{
+    ViewBag.Title = "ConsultaPedidoEntreFecha";
+}
+
+<h2>ConsultaPedidoEntreFecha</h2>
+
+<div>
+    @using (@Html.BeginForm())
+    {
+        <en>Desde : </en>
+        @Html.TextBox("f1", "", new { type = "date" })
+        <en>Hasta : </en>
+        @Html.TextBox("f2", "", new { type = "date" })
+        <button>Consultar</button>
+    }
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.idpedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechapedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombrecia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dirdestinatario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ciudestinatario)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.idpedido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechapedido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombrecia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dirdestinatario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ciudestinatario)
+        </td>
+    </tr>
+}
+
+</table>
